@@ -1,38 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .App {
+  font-family: "Roboto", sans-serif;
+}
+
+.material-icons {
+  display: inline-block;
+  width: 95%;
+  margin: 10px 0;
+  text-align: right;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.shop-cards {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop-card {
+  box-sizing: border-box;
+  width: 340px;
+  height: 340px;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding: 10px 30px;
+  background-color: #f5f4f4;
+  border-radius: 4px;
+  box-shadow: 7px 7px 10px  rgba(0, 0, 0, 0.2);
+  color:#535151;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shop-card__title {
+  margin: 8px;
+  font-size: 21px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shop-card__subtitle {
+  display: inline-block;
+  width: 100px;
+  color:#7c7c7c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shop-card__image {
+  width: 200px;
+  height: 200px;
+}
+
+.shop-card__info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.shop-card__price {
+  color: #e25656;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop-card__button {
+  outline: 0;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid   #e25656;  ;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: #e25656;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.shop-card__button:hover {
+  background-color: #e25656;
+  color: #ffffff;
+}
+
+.shop-items{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  background-color: #f4f3f3;
+  border: 1px solid #ffffff;
+}
+
+.shop-item__image {
+  width: 100px;
+  height: 100px;
 }
